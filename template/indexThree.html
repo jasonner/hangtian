@@ -1,0 +1,593 @@
+<!-- <link rel="stylesheet" href="./css/indexThree.css"> -->
+
+<style>
+    #indexThree {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.Tcont-one {
+    width: 497px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Tcont-border {
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(19, 74, 176, 0.64);
+    border: 4px solid #1281ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Tcont-border ul {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.Tcont-border ul .tongbi {
+    font-size: 18px;
+}
+
+.Tcont-border ul .tongbi span:nth-of-type(2) {
+    margin-left: 5px;
+}
+
+.Tcont-border ul li {
+    flex: 1;
+    line-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.Tcont-border ul li span {
+    flex: 1;
+}
+
+.Tcont-border ul li .num {
+    font-family: SourceHanSansCN, SourceHanSansCN-Heavy;
+    font-weight: 800;
+    font-size: 32px;
+    color: #FFCC00;
+}
+
+.Tcont-border ul li .unit {
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: 5px;
+}
+
+.Tcont-one-top {
+    height: 164px;
+}
+
+.Tcont-one-cen {
+    height: 352px;
+}
+
+.Tcont-one-bot {
+    height: 386px;
+}
+
+.Tcont-ul {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Tcont-select {
+    height: 35px;
+    line-height: 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    font-size: 20px;
+}
+
+.Tcont-select label {
+    color: #FFFFFF;
+}
+
+.layui-input {
+    box-sizing: border-box;
+    width: 130px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.30);
+    border: 2px solid rgba(227, 227, 228, 0.64);
+    color: #333333;
+}
+
+.Tcont-select {
+    padding: 20px 0px 0px 22px;
+}
+
+.Tcont-ul-cont {
+    width: 100%;
+    flex: 1;
+}
+
+.Tcont-two {
+    width: 840px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Tcont-two-top {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Tcont-two-topone {
+    /* flex: 1; */
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+}
+
+.two-topone-left {
+    flex: 1;
+    padding-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topone-ul {
+    width: 100%;
+    height: 45px;
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 45px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.topone-ul li {
+    width: 41px;
+    height: 45px;
+    margin-right: 5px;
+    background: #0dc7cc;
+    border-radius: 2px;
+}
+
+.topone-ul span {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.topone-p {
+    width: 100%;
+    height: 32px;
+    text-indent: 2px;
+    font-size: 19px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.topone-p span {
+    margin-left: 10px;
+}
+
+.topone-p .num {
+    color: #FFCC00;
+}
+
+.two-topone-right {
+    /* flex: 1; */
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topone-pie {
+    flex: 1;
+    height: 100%;
+}
+
+.Tcont-two-toptwo {
+    /* flex: 1; */
+    height: 207px;
+    display: flex;
+    flex-direction: row;
+}
+
+.two-toptwo-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.two-toptwo-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.toptwor-ul {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.toptwor-ul li{
+    flex: 1;
+    height: 45px;
+    line-height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: #FFFFFF;
+    background: rgba(19,74,176,0.20);
+    border: 2px solid #1281ff;
+}
+.toptwor-ul li:nth-of-type(1),
+.toptwor-ul li:nth-of-type(3){
+    background: rgba(19,74,176,0.64);
+}
+.toptwor-ul li.border{
+    border-bottom: none;
+}
+.toptwor-ul li span{
+    flex: 1;
+    text-align: center;
+}
+.Tcont-two-topthree {
+    /* flex: 1; */
+    height: 230px;
+    display: flex;
+    flex-direction: row;
+}
+
+.two-topthree-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.two-topthree-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.Tcont-two-bot {
+    height: 299px;
+}
+
+.Tcont-three {
+    width: 431px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Tcont-bar {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Tcont-tittle {
+    padding: 20px 0px 0px 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.Tcont-three-top {
+    height: 287px;
+}
+
+.Tcont-three-cen {
+    height: 299px;
+}
+
+.Tcont-three-bot {
+    height: 318px;
+}
+
+.Tcont-three-bot .layui-input {
+    width: 230px;
+}
+
+.layui-layer {
+    background-color: rgba(4, 14, 74, 0.70);
+    border-color: #00baff;
+}
+
+.layui-layer-title {
+    height: 70px;
+    line-height: 70px;
+    border: none;
+    font-size:24px;
+    background: rgba(4, 14, 74, 0.30);
+    color: #ffffff;
+}
+.layui-layer-title img{
+    line-height: 70px;
+    margin-top: -8px;
+    margin-right: 10px;
+}
+.layui-layer-setwin {
+    width: 44px;
+    height: 44px;
+    margin-right: 20px;
+    /* color: #f29509;
+    background: linear-gradient(0deg, #ff7a00 0%, #ffc000 100%);
+    border: 2px solid #f29509; */
+}
+.layui-layer-setwin a{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background: url(/img/close.png) no-repeat;
+}
+
+#layer_node {
+    box-sizing: border-box;
+    padding: 0px 25px 30px 25px;
+}
+
+.layui-table {
+    background-color: rgba(31, 68, 163, 0.50);
+}
+
+.layui-table thead tr {
+    height: 120px;
+    background: #425799;
+}
+.layui-table-cell{
+    padding: 0px 8px;
+}
+thead tr th .layui-table-cell {
+    height: 110px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    box-sizing: border-box;
+}
+
+
+.layui-table td, .layui-table th, .layui-table-col-set, .layui-table-fixed-r, .layui-table-grid-down, .layui-table-header, .layui-table-page, .layui-table-tips-main, .layui-table-tool, .layui-table-total, .layui-table-view, .layui-table[lay-skin=line], .layui-table[lay-skin=row]{
+    border-color: #6d7fd5;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.layui-table tbody tr:hover {
+    background-color: rgba(31, 68, 163, 0.80);
+}
+</style>
+
+<div id="indexThree">
+
+    <div class="Tcont-one">
+        <div class="Tcont-border Tcont-one-top">
+            <ul>
+                <li class="lirunOpen">净利润总额</li>
+                <li>
+                    <span class="num">4.20</span>
+                    <span class="unit">亿元</span>
+                </li>
+                <li class="tongbi">
+                    <span>同比</span>
+                    <span style="color: #60F3F8;">7.10%</span>
+                </li>
+            </ul>
+            <ul>
+                <li class="hetongOpen">新签合同总额</li>
+                <li>
+                    <span class="num">36.00</span>
+                    <span class="unit">亿元</span>
+                    <li class="tongbi">
+                        <span>同比</span>
+                        <span style="color: #ec757f;">-7.10%</span>
+                    </li>
+                </li>
+            </ul>
+            <ul>
+                <li>职工人数</li>
+                <li>
+                    <span class="num">2579</span>
+                    <span class="unit">人</span>
+                    <li class="tongbi">
+                        <span>同比</span>
+                        <span style="color: #60F3F8;">3.10%</span>
+                    </li>
+                </li>
+            </ul>
+        </div>
+        <div class="Tcont-border Tcont-one-cen Tcont-bar">
+            <div class="Tcont-tittle">企业经营概览</div>
+            <div class="Tcont-ul">
+                <div class="Tcont-select layui-form" action="">
+                    <label for=" ">统计范围：</label>
+                    <select name=" city " lay-verify=" required ">
+                        <option value=" "></option>
+                        <option value=" 0 " selected>航天发展</option>
+                        <option value=" 1 ">航天发展</option>
+                    </select>
+                </div>
+                <div class="Tcont-ul-cont" id="Tcont-ulonetop-cont"></div>
+            </div>
+        </div>
+        <div class="Tcont-border Tcont-one-bot Tcont-bar" style="position:relative;">
+            <div class="Tcont-tittle" style="position: absolute;">发展党员情况分析</div>
+            <div class="Tcont-ul" id="Tcont-ul-onebot"></div>
+        </div>
+    </div>
+    <div class="Tcont-two">
+        <div class="Tcont-two-top">
+            <div class="Tcont-two-topone">
+                <div class="two-topone-left">
+                    <div class="Tcont-tittle" style="padding: 0;">年营业收入</div>
+                    <ul class="topone-ul">
+                        <li>2</li>
+                        <li>9</li>
+                        <li>8</li>
+                        <li>2</li>
+                        <li>6</li>
+                        <li>1</li>
+                        <span style="margin-right: 10px;">,</span>
+                        <li>1</li>
+                        <li>1</li>
+                        <span>万元</span>
+                    </ul>
+                    <p class="topone-p">
+                        去年同期收入<span class="num">293500</span>万元<span></span>同比增长<span>1.8</span>%
+                    </p>
+                </div>
+                <div class="two-topone-right">
+                    <div class="topone-pie" id="topone-pie"></div>
+                    <div class="topone-pie" id="topone-pies"></div>
+                </div>
+
+            </div>
+            <div class="Tcont-two-toptwo">
+                <div class="two-toptwo-left">
+                    <div class="Tcont-tittle" style="padding: 0;">五年营收概览</div>
+                    <div class="Tcont-ul" id="toptwo-bar">
+
+                    </div>
+                </div>
+                <div class="two-toptwo-right">
+                    <ul class="toptwor-ul">
+                        <li class="border">
+                            <span>有效专利数量</span>
+                            <span>200</span>
+                        </li>
+                        <li class="border">
+                            <span>有效发明专利数量</span>
+                            <span>20</span>
+                        </li>
+                        <li class="border">
+                            <span>质量问题数</span>
+                            <span>5</span>
+                        </li>
+                        <li>
+                            <span>质量问题整改率</span>
+                            <span>90%</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Tcont-two-topthree">
+                <div class="two-topthree-left">
+                    <div class="Tcont-tittle" style="padding: 0;">合同军民品分析</div>
+                    <div class="Tcont-ul" id="topthree-pie">
+
+                    </div>
+
+                </div>
+                <div class="two-topthree-right">
+                    <div class="Tcont-tittle" style="padding: 0;">新签合同额</div>
+                    <div class="Tcont-ul" id="topthree-line">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Tcont-border Tcont-two-bot Tcont-bar">
+            <div class="Tcont-tittle">企业经营月度概览</div>
+            <div class="Tcont-ul">
+                <div class="Tcont-select layui-form" action=" ">
+                    <label for=" ">统计范围：</label>
+                    <select name="city" lay-verify="required ">
+                        <option value=""></option>
+                        <option value="0" selected>航天发展</option>
+                        <option value="1">航天发展</option>
+                    </select>
+                    <label for=" " style="margin-left: 35px;">指标类型：</label>
+                    <select name="city " lay-verify="required">
+                        <option value=""></option>
+                        <option value="0" selected>营业收入</option>
+                        <option value="1">营业收入</option>
+                    </select>
+                </div>
+                <div class="Tcont-ul-cont" id="Tcont-twobot-cont"></div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="Tcont-three ">
+
+        <div class="Tcont-border Tcont-three-top Tcont-bar">
+            <div class="Tcont-tittle ">职工类别占比</div>
+            <div class="Tcont-ul " id="Tcont-ul-threetop"></div>
+        </div>
+        <div class="Tcont-border Tcont-three-cen Tcont-bar">
+            <div class="Tcont-tittle">资金情况概览</div>
+            <div class="Tcont-ul">
+                <div class="Tcont-select layui-form" action=" ">
+                    <label for=" ">指标类型：</label>
+                    <select name="city" lay-verify="required">
+                        <option value=""></option>
+                        <option value="0" selected>应收账款</option>
+                        <option value="1">应收账款</option>
+                    </select>
+                </div>
+                <div class="Tcont-ul-cont" id="Tcont-threecen-cont"></div>
+            </div>
+        </div>
+        <div class="Tcont-border Tcont-three-bot Tcont-bar">
+            <div class="Tcont-tittle">企业经营概览</div>
+            <div class="Tcont-ul">
+                <div class="Tcont-select layui-form" action=" ">
+                    <label for=" ">指标类型：</label>
+                    <select name="city " lay-verify="required ">
+                        <option value=" "></option>
+                        <option value="0 " selected>审计发现问题及整改</option>
+                        <option value="1 ">审计发现问题及整改</option>
+                    </select>
+                </div>
+                <div class="Tcont-ul-cont" id="Tcont-threebot-cont"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript " src="js/indexThree.js "></script>
